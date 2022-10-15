@@ -4,9 +4,8 @@
         class="navbar navbar-expand-lg navbar-light border-bottom border-1 pt-3 pb-3"
       >
         <div class="container">
-          <a class="navbar-brand" href="index.html"
-            ><h2 class="fw-bolder">Shikhi</h2></a
-          >
+          <router-link class="navbar-brand" to="/"
+            ><h2 class="fw-bolder">Shikhi</h2></router-link>
           <button
             class="navbar-toggler"
             type="button"
@@ -21,12 +20,12 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="dashboard.html"
-                  >Dashboard</a
+                <router-link class="nav-link active" aria-current="page" to="/about"
+                  >About</router-link
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Courses</a>
+                <router-link class="nav-link" to="/">Courses</router-link>
               </li>
             </ul>
           </div>

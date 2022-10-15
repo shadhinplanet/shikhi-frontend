@@ -1,9 +1,12 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import Home from './pages/Home.vue'
 
-// import './assets/main.css'
+import './core/axios';
+import router from './core/router';
 
 import './assets/style.css';
 
-createApp(Home).mount('#app')
+
+const app = createApp(App);
+app.use(router);
+app.mount('#app');
